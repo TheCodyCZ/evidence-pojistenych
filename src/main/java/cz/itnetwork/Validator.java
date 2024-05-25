@@ -1,14 +1,9 @@
 package cz.itnetwork;
 
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.Scanner;
-
 public class Validator {
 
     public static boolean ValidatorText(String text) {
 
-        Scanner scanner = new Scanner(System.in);
         boolean validni = true;
 
         if (text.isEmpty()) {
@@ -22,17 +17,12 @@ public class Validator {
                     break;
                 }
             }
-            if (validni){
-                return true;
-            }else {
-                return false;
-            }
+            return validni;
         }
     }
 
     public static boolean ValidatorNumber(String number) {
 
-        Scanner scanner = new Scanner(System.in);
         boolean validni = true;
 
         if (number.isEmpty()) {
@@ -46,11 +36,7 @@ public class Validator {
                     break;
                 }
             }
-            if (validni){
-                return true;
-            }else {
-                return false;
-            }
+            return validni;
         }
     }
 
