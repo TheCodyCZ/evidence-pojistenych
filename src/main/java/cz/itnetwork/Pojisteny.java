@@ -1,5 +1,9 @@
 package cz.itnetwork;
 
+/**
+ * Metoda pro uložení pojištěného do paměti a transformaci na string pro uložení do kolekce
+ */
+
 public class Pojisteny {
 
     private String jmeno;

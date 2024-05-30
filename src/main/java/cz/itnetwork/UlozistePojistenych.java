@@ -2,6 +2,10 @@ package cz.itnetwork;
 
 import java.util.*;
 
+/**
+ * Kolekce pro ukládání jednotlivých pojištěnců
+ */
+
 public class UlozistePojistenych {
 
     static Collection<String> pojisteni = new ArrayList<>();

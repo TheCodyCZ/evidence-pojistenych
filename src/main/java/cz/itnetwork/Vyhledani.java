@@ -6,6 +6,10 @@ import java.util.Scanner;
 
 import static cz.itnetwork.UlozistePojistenych.pojisteni;
 
+/**
+ * Funkce pro vyhledání a vypsání vyhledaných pojištěných v kolekci
+ */
+
 public class Vyhledani {
 
     Scanner scanner = new Scanner(System.in);
@@ -23,11 +27,13 @@ public class Vyhledani {
         hledanePrijmeni = StringUtils.capitalize(scanner.nextLine().toLowerCase());
 
         for(String pojisteny:pojisteni) {
+            //rozdělení stringu s pojištěnci zpět na jednotlivé elementy
             pojistenyPole = pojisteny.split(", ");
+            //vyhledání shody ve jméně a příjmení a jejich následné vypsání do tabulky se všemi informacemi
             if(pojistenyPole[0].equals(hledaneJmeno) && pojistenyPole[1].equals(hledanePrijmeni)){
                 System.out.printf("| %-8s | %-10s | %-4s | %-10s |\n", pojistenyPole);
                 nalezeno = true;
-            }else continue;
+            }
         }
         if(!nalezeno){
             System.out.println("Nenalezeno");

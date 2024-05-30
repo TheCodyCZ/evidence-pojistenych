@@ -8,18 +8,24 @@ import static cz.itnetwork.UlozistePojistenych.Ulozeni;
 import static cz.itnetwork.Validator.ValidatorNumber;
 import static cz.itnetwork.Validator.ValidatorText;
 
+/**
+ * Funkce pro registraci nového pojištěného
+ */
+
 public class Registrace {
 
     Scanner scanner = new Scanner(System.in);
 
     public Registrace() {
-
+        //definice proměných
         String jmeno;
         String prijmeni;
+        //meziproměné a jejich následné fináolní proměné složící k validaci vstupu
         String vekString;
         String telefonString;
         int vek;
         int telefon;
+        //definice pomocných proměných pro ukládání a validitu
         String ulozit;
         boolean validni;
 

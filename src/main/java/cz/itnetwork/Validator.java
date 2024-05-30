@@ -1,7 +1,11 @@
 package cz.itnetwork;
 
-public class Validator {
+/**
+ * Funkce pro validaci obsahu při registraci
+ */
 
+public class Validator {
+    //validace textového řetězce, který nesmí obsahovat čísla a nesmí být prázdný
     public static boolean ValidatorText(String text) {
 
         boolean validni = true;
@@ -20,7 +24,7 @@ public class Validator {
             return validni;
         }
     }
-
+    //validace textového řetězce který musí obsahovat pouze čísla pro potřeby parsování a nesmí být prázdný
     public static boolean ValidatorNumber(String number) {
 
         boolean validni = true;
